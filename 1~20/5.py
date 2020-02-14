@@ -1,13 +1,3 @@
-#
-# @lc app=leetcode.cn id=5 lang=python3
-#
-# [5] 最长回文子串
-#
-
-# @lc code=start
-import numpy as np
-
-
 class Solution:
     def longestPalindrome(self, s):
         length = len(s)
@@ -30,4 +20,3 @@ class Solution:
                     index = i
 
         return s[index-max_len+1:index+1]
-# @lc code=end
