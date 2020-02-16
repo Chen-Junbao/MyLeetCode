@@ -1,10 +1,3 @@
-#
-# @lc app=leetcode.cn id=8 lang=python3
-#
-# [8] 字符串转换整数 (atoi)
-#
-
-# @lc code=start
 class Solution:
     def myAtoi(self, str):
         length = len(str)
@@ -89,10 +82,8 @@ class Solution:
                 limit = '2147483647'
                 for i in range(1, 10):
                     if number[i] > limit[i]:
-                        # overflow
+                        overflow
                         return 2147483647
                     elif number[i] < limit[i]:
                         return int(number)
             return int(number)
-# @lc code=end
-
