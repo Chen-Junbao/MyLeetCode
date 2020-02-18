@@ -1,10 +1,3 @@
-#
-# @lc app=leetcode.cn id=10 lang=python3
-#
-# [10] 正则表达式匹配
-#
-
-# @lc code=start
 class Solution:
     def isMatch(self, s, p):
         len_s = len(s)
@@ -27,5 +20,3 @@ class Solution:
         else:
             # p[1] != '*'
             return len_s != 0 and (s[0] == p[0] or p[0] == '.') and self.isMatch(s[1:], p[1:])
-# @lc code=end
-
